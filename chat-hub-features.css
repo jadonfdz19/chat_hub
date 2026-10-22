@@ -1,0 +1,125 @@
+/* CHAT HUB FEATURE ADD-ON STYLES */
+
+.message-feature-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+}
+
+.message-feature-button {
+    padding: 9px 12px;
+    border: 1px solid #d5e5f5;
+    border-radius: 9px;
+    background: #eef6ff;
+    color: #17324d;
+    cursor: pointer;
+}
+
+.message-feature-button:hover {
+    background: #dcecff;
+}
+
+.message-feature-button:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.message-feature-button.recording {
+    background: #ffe6e8;
+    color: #a51e36;
+}
+
+.feature-status {
+    color: #5c7288;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+.attachment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #d5e5f5;
+    border-radius: 10px;
+    background: #f7fbff;
+}
+
+.attachment-download {
+    color: #176db8;
+    font-size: 13px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.attachment-audio {
+    display: block;
+    width: min(280px, 100%);
+    max-width: 100%;
+}
+
+.attachment-meta {
+    color: #5c7288;
+    font-size: 10px;
+    overflow-wrap: anywhere;
+}
+
+.unread-badge {
+    display: inline-flex;
+    min-width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0 6px;
+    border-radius: 20px;
+    background: #167a55;
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.notification-container {
+    position: fixed;
+    z-index: 9999;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    max-width: min(360px, calc(100vw - 36px));
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chat-notification {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px 16px;
+    border: 1px solid #d5e5f5;
+    border-radius: 12px;
+    background: white;
+    color: #17324d;
+    box-shadow: 0 8px 30px #17324d20;
+    font-size: 13px;
+}
+
+.chat-notification strong {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .message-feature-toolbar {
+        gap: 5px;
+    }
+
+    .message-feature-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .feature-status {
+        width: 100%;
+    }
+}
